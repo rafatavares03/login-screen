@@ -1,1 +1,2 @@
-import "./styles.css";
+import "./css/styles.css";
+import "./images/sky.jpg";
