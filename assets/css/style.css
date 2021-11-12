@@ -62,3 +62,26 @@ body {
   background-repeat: no-repeat;
   background-position: 0.7rem center;
 }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info a {
+  color: #eee;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.info a:hover {
+  border-bottom: solid 1px #eee;
+}
+
+@media (min-width: 450px) {
+  .container {
+    max-width: 500px;
+  }
+}
