@@ -7,11 +7,46 @@
 }
 
 body {
-  align-items: center;
-  background-image: url('../images/sky.jpg');
-  background-position: 50% 35%;
+  background-image: url('../images/ocean.jpg');
+  background-position: 50% 80%;
   background-repeat: no-repeat;
-  display: flex;
   font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  align-items: center;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: 100vh;
   justify-content: center;
+  width: 95vw;
+}
+
+.logo {
+  border: solid 5px #fff;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+  padding: 1rem 2rem;
+}
+
+.form input {
+  background-color: #fff3;
+  border: 0;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 0.95rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  outline: 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.form input::placeholder {
+  color: #fff;
 }
