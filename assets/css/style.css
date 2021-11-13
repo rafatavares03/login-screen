@@ -63,6 +63,11 @@ body {
   background-position: 0.7rem center;
 }
 
+.form input[type="button"] {
+  background-color: #43434A;
+  padding: 0.5rem 0rem;
+}
+
 .info {
   display: flex;
   justify-content: space-between;
