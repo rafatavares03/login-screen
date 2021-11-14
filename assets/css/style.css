@@ -58,13 +58,25 @@ body {
   padding: 0.5rem 1rem 0.5rem 2.5rem;
 }
 
+.form input[type="email"] {
+  background-image: url('../images/email.png');
+  background-repeat: no-repeat;
+  background-position: 0.7rem center;
+}
+
+.form input[type="password"] {
+  background-image: url('../images/senha.png');
+  background-repeat: no-repeat;
+  background-position: 0.7rem center;
+}
+
 .form-item label {
   font-weight: 300;
 }
 
 .label-float {
   font-size: 0.95rem;
-  left: 40px;
+  left: 2.6rem;
   position: absolute;
   top: calc(50% - 0.5rem);
   transition: 0.5s;
@@ -79,18 +91,6 @@ body {
   transition: 0.25s;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
-}
-
-.form input[type="email"] {
-  background-image: url('../images/email.png');
-  background-repeat: no-repeat;
-  background-position: 0.7rem center;
-}
-
-.form input[type="password"] {
-  background-image: url('../images/senha.png');
-  background-repeat: no-repeat;
-  background-position: 0.7rem center;
 }
 
 .button {
@@ -119,5 +119,51 @@ body {
 @media (min-width: 450px) {
   .container {
     max-width: 500px;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-size: 100%;
+  }
+
+  .logo {
+    font-size: 6rem;
+    padding: 2.5rem 4rem;
+  }
+
+  .container {
+    max-width: 850px;
+  }
+
+  .form-item {
+    margin-bottom: 2rem;
+  }
+
+  .form input {
+    border-radius: 3rem;
+    font-size: 2rem;
+  }
+
+  .input {
+    padding: 2.5rem 2rem 2.5rem 2.5rem;
+  }
+
+  .label-float {
+    font-size: 2rem;
+    top: calc(50% - 1.5rem);
+  }
+
+  .input:focus + .label-float,
+  .input:not(:placeholder-shown) + .label-float {
+  font-size: 1.3rem;
+  }
+
+  .button {
+    padding: 0;
+  }
+
+  .info a {
+    font-size: 2rem;
   }
 }
