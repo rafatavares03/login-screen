@@ -34,21 +34,51 @@ body {
   padding: 1rem 2rem;
 }
 
+.form {
+  width: 100%;
+}
+
+.form-item {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
 .form input {
-  background-color: #fff3;
   border: 0;
   border-radius: 2rem;
   color: #fff;
   font-size: 0.95rem;
   height: 3rem;
-  margin-bottom: 1rem;
   outline: 0;
-  padding: 0.5rem 1rem 0.5rem 2.5rem;
   width: 100%;
 }
 
-.form input::placeholder {
-  color: #fff;
+.input {
+  background-color: #fff3;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+}
+
+.form-item label {
+  font-weight: 300;
+}
+
+.label-float {
+  font-size: 0.95rem;
+  left: 40px;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+
+.input:focus + .label-float,
+.input:not(:placeholder-shown) + .label-float {
+  font-size: 0.85rem;
+  top: 0;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
 }
 
 .form input[type="email"] {
@@ -63,8 +93,9 @@ body {
   background-position: 0.7rem center;
 }
 
-.form input[type="button"] {
+.button {
   background-color: #43434A;
+  margin-bottom: 1rem;
   padding: 0.5rem 0rem;
 }
 
