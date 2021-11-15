@@ -58,6 +58,10 @@ body {
   padding: 0.5rem 1rem 0.5rem 2.5rem;
 }
 
+.input:invalid {
+  border: solid 1px #f00;
+}
+
 .form input[type="email"] {
   background-image: url('../images/email.png');
   background-repeat: no-repeat;
@@ -70,12 +74,9 @@ body {
   background-position: 0.7rem center;
 }
 
-.form-item label {
-  font-weight: 300;
-}
-
 .label-float {
   font-size: 0.95rem;
+  font-weight: 300;
   left: 2.6rem;
   position: absolute;
   top: calc(50% - 0.5rem);
