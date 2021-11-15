@@ -18,7 +18,7 @@ Sobre
 
 Screenshot
 ----------
-<img alt="Home" title="Home" src="assets/screenshot/home.png"/>
+<img alt="Home" title="Home" src="assets/screenshot/home.jpg"/>
 
 Como Usar
 ---------
